@@ -38,7 +38,7 @@ def frequency_of_elements_list():
 
 # Python program to find the largest and smallest elements in a list.
 def largest_and_smallest():
-    lst = list(map(int, input("Enter list elements separated by space: ").split()))
+    lst = list(map(int, input("Enter list of the elements separated by space: ").split()))
     print("Largest element:", max(lst))
     print("Smallest element:", min(lst))
 

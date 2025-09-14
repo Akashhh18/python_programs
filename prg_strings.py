@@ -70,8 +70,7 @@ if __name__ == "__main__":
         "6": ("Check if string is pangram", pangram_check),
         "7": ("Capitalize first letter of each word", capitalize_words),
         "8": ("Word frequency in string", word_frequency),
-        "9": ("Check valid palindrome (ignore non-alphanumeric)", valid_palindrome),
-        "10": ("Remove all punctuations from string", remove_punctuations),
+        "9": ("Remove all punctuations from string", remove_punctuations),
     }
 
     print("\nSelect a program to run:")
