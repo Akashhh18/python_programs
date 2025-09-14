@@ -43,6 +43,7 @@ def even_or_odd():
     print("Even" if n % 2 == 0 else "Odd")
 
 #Python program to calculate the square root of a number.
+
 def square_root():
     n = int(input("Enter a number: "))
     print("Square root is:", n ** 0.5)

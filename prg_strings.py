@@ -54,11 +54,6 @@ def word_frequency():
         freq[word] = freq.get(word, 0) + 1
     print("Word frequency:", freq)
 
-# Python program to check if a given string is a valid palindrome or not.
-def valid_palindrome():
-    s = ''.join(c.lower() for c in input("Enter a string: ") if c.isalnum())
-    print("Is valid palindrome?", s == s[::-1])
-
 # Python program to remove all punctuations from a given string.
 def remove_punctuations():
     s = input("Enter a string: ")
