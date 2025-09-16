@@ -21,6 +21,8 @@ def is_subset():
     set1 = set(input("Enter elements of first set separated by space: ").split())
     set2 = set(input("Enter elements of second set separated by space: ").split())
     print("Is set1 a subset of set2?", set1 <= set2)
+    print("Is set2 a subset of set1?", set2 <= set1)
+
 
 # Python program to remove duplicates from a list and convert it to a set.
 def remove_duplicates_to_set():
@@ -55,11 +57,7 @@ def set_operations_methods():
     print("Intersection:", set1.intersection(set2))
     print("Difference (set1 - set2):", set1.difference(set2))
 
-# Python program to check if a set is a proper subset of another set.
-def is_proper_subset():
-    set1 = set(input("Enter elements of first set separated by space: ").split())
-    set2 = set(input("Enter elements of second set separated by space: ").split())
-    print("Is set1 a proper subset of set2?", set1 < set2)
+
 
 if __name__ == "__main__":
     programs = {
@@ -72,7 +70,6 @@ if __name__ == "__main__":
         "7": ("Check if two sets are disjoint", are_disjoint),
         "8": ("Cartesian product of two sets", cartesian_product),
         "9": ("Set operations using methods", set_operations_methods),
-        "10": ("Check if a set is a proper subset", is_proper_subset),
     }
 
     print("\nSelect a program to run:")

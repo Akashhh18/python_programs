@@ -1,6 +1,6 @@
 # Python program to find the length of a dictionary.
 def dict_length():
-    d = eval(input("Enter a dictionary (e.g. {'a':1,'b':2}): "))
+    d = eval(input("Enter a dictionary: "))
     print("Length of dictionary:", len(d))
 
 # Python program to check if a given key exists in a dictionary.

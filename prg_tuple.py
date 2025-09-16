@@ -42,7 +42,6 @@ def length_of_longest_increasing_subseq():
     if not t:
         print("Tuple is empty.")
         return
-    # Dynamic programming approach
     dp = [1] * len(t)
     for i in range(1, len(t)):
         for j in range(i):
@@ -72,7 +71,7 @@ def first_occurrence_index():
 def check_same_elements():
     t1 = tuple(input("Enter elements of first tuple separated by space: ").split())
     t2 = tuple(input("Enter elements of second tuple separated by space: ").split())
-    print("Tuples have same elements (order ignored)?", set(t1) == set(t2))
+    print("Tuples have same elements?", set(t1) == set(t2))
 
 # Python program to find the median of elements in a tuple.
 def median_of_tuple():

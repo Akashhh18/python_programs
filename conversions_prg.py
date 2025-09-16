@@ -25,7 +25,7 @@ def fahrenheit_to_celsius():
 
 # Python program to convert distance from kilometers to miles and vice versa.
 def km_miles_conversion():
-    choice = input("Convert (1) km → miles or (2) miles → km? Enter 1 or 2: ").strip()
+    choice = input("1. km to miles \n2. miles to km \n Enter your choice: ").strip()
     if choice == '1':
         km = float(input("Enter distance in kilometers: "))
         miles = km * 0.621371
@@ -47,13 +47,13 @@ def string_to_char_frequency_dict():
 
 # Python program to convert a list of tuples to a dictionary.
 def list_of_tuples_to_dict():
-    tuples_list = eval(input("Enter a list of tuples (e.g. [(a,1),(b,2)]): "))
+    tuples_list = eval(input("Enter a list of tuples: ")) #format : (e.g. [('a',1),('b',2)])
     d = dict(tuples_list)
     print("Dictionary:", d)
 
 # Python program to convert a dictionary to a list of tuples.
 def dict_to_list_of_tuples():
-    d = eval(input("Enter a dictionary (e.g. {'a':1,'b':2}): "))
+    d = eval(input("Enter a dictionary: ")) #format:  (e.g. {'a':1,'b':2})
     tuples_list = list(d.items())
     print("List of tuples:", tuples_list)
 
@@ -74,16 +74,16 @@ def list_of_integers_to_binary_string():
 
 if __name__ == "__main__":
     programs = {
-        "1": ("String → List of characters", string_to_char_list),
-        "2": ("List of characters → String", char_list_to_string),
-        "3": ("Decimal → Binary, Octal, Hexadecimal", decimal_to_bin_oct_hex),
-        "4": ("Fahrenheit → Celsius", fahrenheit_to_celsius),
-        "5": ("Kilometers ↔ Miles conversion", km_miles_conversion),
-        "6": ("String → Character frequency dictionary", string_to_char_frequency_dict),
-        "7": ("List of tuples → Dictionary", list_of_tuples_to_dict),
-        "8": ("Dictionary → List of tuples", dict_to_list_of_tuples),
-        "9": ("Binary → Decimal", binary_to_decimal),
-        "10": ("List of integers → Binary strings", list_of_integers_to_binary_string),
+        "1": ("String -> List of characters", string_to_char_list),
+        "2": ("List of characters -> String", char_list_to_string),
+        "3": ("Decimal -> Binary, Octal, Hexadecimal", decimal_to_bin_oct_hex),
+        "4": ("Fahrenheit -> Celsius", fahrenheit_to_celsius),
+        "5": ("Kilometers <- -> Miles conversion", km_miles_conversion),
+        "6": ("String -> Character frequency dictionary", string_to_char_frequency_dict),
+        "7": ("List of tuples -> Dictionary", list_of_tuples_to_dict),
+        "8": ("Dictionary -> List of tuples", dict_to_list_of_tuples),
+        "9": ("Binary -> Decimal", binary_to_decimal),
+        "10": ("List of integers -> Binary strings", list_of_integers_to_binary_string),
     }
 
     print("\nSelect a program to run:")
